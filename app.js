@@ -17,11 +17,11 @@ var router = express.Router();
 
 
 
-router.get('/', function(req, res) {
+app.get('/', function(req, res) {
     res.json({ message: 'hooray! welcome to our api!' });   
 });
 
-app.use('/api', router);
+// app.use('/api', router);
 
 app.listen(port);
 // http.createServer(function (req, res) {
