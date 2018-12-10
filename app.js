@@ -24,6 +24,6 @@ app.get('/api', (req, res) => {
     res.send('API page')
 });
 
-app.use(express.static('MindThief'));
+app.use(express.static('Assets/images/'));
 
 app.listen(port, () => console.log(`Listening on ${port}`));
