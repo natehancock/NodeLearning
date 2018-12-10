@@ -24,4 +24,6 @@ app.get('/api', (req, res) => {
     res.send('API page')
 });
 
+app.use(express.static('MindThief'));
+
 app.listen(port, () => console.log(`Listening on ${port}`));
