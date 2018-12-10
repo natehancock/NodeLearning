@@ -10,9 +10,9 @@ var port = process.env.PORT || 8080;
 
 var fs = require('fs');
 
-app.get('/', function(req, res) {
+app.get('/ability-cards', function(req, res) {
     fs.readFile(
-        './MindThief/character-ability-cards.js', function(error, data) {
+        './Assets/data/character-ability-cards.js', function(error, data) {
             res.writeHead( 200, {'Content-Type': 'application/json'});
             res.write(data);
             res.end();
