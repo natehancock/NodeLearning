@@ -1,5 +1,3 @@
-var http = require('http');
-var dtModule = require('./module.js');
 
 var express = require('express');
 var app = express();
@@ -12,28 +10,18 @@ var port = process.env.PORT || 8080;
 
 var fs = require('fs');
 
-var router = express.Router();
-
-
-
-
-router.get('/', function(req, res) {
-    res.json({ message: 'hooray! welcome to our api!' });   
+app.get('/', function(req, res) {
+    fs.readFile(
+        './MindThief/character-ability-cards.js', function(error, data) {
+            res.writeHead( 200, {'Content-Type': 'application/json'});
+            res.write(data);
+            res.end();
+        }
+    )
 });
 
-app.use('/api', router);
+app.get('/api', (req, res) => {
+    res.send('API page')
+});
 
-app.listen(port);
-// http.createServer(function (req, res) {
-// 	fs.readFile(
-// 		'./Assets/data/items.js', function(error, data) {
-
-// 			res.writeHead(200, {'Content-Type': 'application/json'});
-// 			res.write(data);
-// 			res.end();
-// 		}
-// 	)
-// 	// res.write('This is the date and time' + dtModule.myDateTime());
-// 	// res.end('Hello World!')
-// }).listen(8080);
-
+app.listen(port, () => console.log(`Listening on ${port}`));
