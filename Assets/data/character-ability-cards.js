@@ -1287,91 +1287,121 @@
     "name": "brain leech",
     "points": 214,
     "image": "character-ability-cards/MT/brain-leech.png",
-    "xws": "brainleech"
+    "xws": "brainleech",
+    "level": 3,
+    "initiative" : 16
   },
   {
     "name": "corrupting embrace",
     "points": 215,
     "image": "character-ability-cards/MT/corrupting-embrace.png",
-    "xws": "corruptingembrace"
+    "xws": "corruptingembrace",
+    "level" : 6,
+    "initiative" : 39
   },
   {
     "name": "cranium overload",
     "points": 216,
     "image": "character-ability-cards/MT/cranium-overload.png",
-    "xws": "craniumoverload"
+    "xws": "craniumoverload",
+    "level" : 4,
+    "initiative" : 5
   },
   {
     "name": "dark frenzy",
     "points": 217,
     "image": "character-ability-cards/MT/dark-frenzy.png",
-    "xws": "darkfrenzy"
+    "xws": "darkfrenzy",
+    "level" : 6,
+    "initiative" : 10 
   },
   {
     "name": "domination",
     "points": 218,
     "image": "character-ability-cards/MT/domination.png",
-    "xws": "domination"
+    "xws": "domination",
+    "level" : 8,
+    "initiative" : 13
   },
   {
     "name": "empathetic assault",
     "points": 219,
     "image": "character-ability-cards/MT/empathetic-assault.png",
-    "xws": "empatheticassault"
+    "xws": "empatheticassault",
+    "level" : 1,
+    "initiative" : 11 
   },
   {
     "name": "fearsome blade",
     "points": 220,
     "image": "character-ability-cards/MT/fearsome-blade.png",
-    "xws": "fearsomeblade"
+    "xws": "fearsomeblade",
+    "level" : 1,
+    "initiative" : 27
   },
   {
     "name": "feedback loop",
     "points": 221,
     "image": "character-ability-cards/MT/feedback-loop.png",
-    "xws": "feedbackloop"
+    "xws": "feedbackloop",
+    "level" : 1,
+    "initiative" : 79
   },
   {
     "name": "frigid apparition",
     "points": 222,
     "image": "character-ability-cards/MT/frigid-apparition.png",
-    "xws": "frigidapparition"
+    "xws": "frigidapparition",
+    "level" : 0,
+    "initiative" : 29
   },
   {
     "name": "frozen mind",
     "points": 223,
     "image": "character-ability-cards/MT/frozen-mind.png",
-    "xws": "frozenmind"
+    "xws": "frozenmind",
+    "level" : 5,
+    "initiative" : 81
   },
   {
     "name": "gnawing horde",
     "points": 224,
     "image": "character-ability-cards/MT/gnawing-horde.png",
-    "xws": "gnawinghorde"
+    "xws": "gnawinghorde",
+    "level" : 1,
+    "initiative" : 82
   },
   {
     "name": "hostile takeover",
     "points": 225,
     "image": "character-ability-cards/MT/hostile-takeover.png",
-    "xws": "hostiletakeover"
+    "xws": "hostiletakeover",
+    "level" : 2,
+    "initiative" : 9
   },
   {
     "name": "into the night",
     "points": 226,
     "image": "character-ability-cards/MT/into-the-night.png",
-    "xws": "intothenight"
+    "xws": "intothenight",
+    "level" : 1,
+    "initiative" : 14
   },
   {
     "name": "many as one",
     "points": 227,
     "image": "character-ability-cards/MT/many-as-one.png",
-    "xws": "manyasone"
+    "xws": "manyasone",
+    "level" : 9,
+    "initiative" : 91
   },
   {
     "name": "mass hysteria",
     "points": 228,
     "image": "character-ability-cards/MT/mass-hysteria.png",
-    "xws": "masshysteria"
+    "xws": "masshysteria",
+    "level" : 5,
+    "initiative" : 12
   },
   {
     "name": "mt-back",
@@ -1383,85 +1413,113 @@
     "name": "parasitic influence",
     "points": 230,
     "image": "character-ability-cards/MT/parasitic-influence.png",
-    "xws": "parasiticinfluence"
+    "xws": "parasiticinfluence",
+    "level" : 1,
+    "initiative" : 71
   },
   {
     "name": "perverse edge",
     "points": 231,
     "image": "character-ability-cards/MT/perverse-edge.png",
-    "xws": "perverseedge"
+    "xws": "perverseedge",
+    "level" : 1,
+    "initiative" : 8
   },
   {
     "name": "phantasmal killer",
     "points": 232,
     "image": "character-ability-cards/MT/phantasmal-killer.png",
-    "xws": "phantasmalkiller"
+    "xws": "phantasmalkiller",
+    "level" : 9,
+    "initiative" : 67
   },
   {
     "name": "pilfer",
     "points": 233,
     "image": "character-ability-cards/MT/pilfer.png",
-    "xws": "pilfer"
+    "xws": "pilfer",
+    "level" : 4,
+    "initiative" : 68
   },
   {
     "name": "possession",
     "points": 234,
     "image": "character-ability-cards/MT/possession.png",
-    "xws": "possession"
+    "xws": "possession",
+    "level" : 0,
+    "initiative" : 51
   },
   {
     "name": "psychic projection",
     "points": 235,
     "image": "character-ability-cards/MT/psychic-projection.png",
-    "xws": "psychicprojection"
+    "xws": "psychicprojection",
+    "level" : 7,
+    "initiative" : 92
   },
   {
     "name": "scurry",
     "points": 236,
     "image": "character-ability-cards/MT/scurry.png",
-    "xws": "scurry"
+    "xws": "scurry",
+    "level" : 1,
+    "initiative" : 20
   },
   {
     "name": "shared nightmare",
     "points": 237,
     "image": "character-ability-cards/MT/shared-nightmare.png",
-    "xws": "sharednightmare"
+    "xws": "sharednightmare",
+    "level" : 8,
+    "initiative" : 7
   },
   {
     "name": "silent scream",
     "points": 238,
     "image": "character-ability-cards/MT/silent-scream.png",
-    "xws": "silentscream"
+    "xws": "silentscream",
+    "level" : 3,
+    "initiative" : 73
   },
   {
     "name": "submissive affliction",
     "points": 239,
     "image": "character-ability-cards/MT/submissive-affliction.png",
-    "xws": "submissiveaffliction"
+    "xws": "submissiveaffliction",
+    "level" : 1,
+    "initiative" : 48
   },
   {
     "name": "the mind's weakness",
     "points": 240,
     "image": "character-ability-cards/MT/the-minds-weakness.png",
-    "xws": "themindsweakness"
+    "xws": "themindsweakness",
+    "level" : 1,
+    "initiative" : 75
   },
   {
     "name": "vicious blood",
     "points": 241,
     "image": "character-ability-cards/MT/vicious-blood.png",
-    "xws": "viciousblood"
+    "xws": "viciousblood",
+    "level" : 7,
+    "initiative" : 83
   },
   {
     "name": "withering claw",
     "points": 242,
     "image": "character-ability-cards/MT/withering-claw.png",
-    "xws": "witheringclaw"
+    "xws": "witheringclaw",
+    "level" : 0,
+    "initiative" : 77
   },
   {
     "name": "wretched creature",
     "points": 243,
     "image": "character-ability-cards/MT/wretched-creature.png",
-    "xws": "wretchedcreature"
+    "xws": "wretchedcreature",
+    "level" : 2,
+    "initiative" : 84
   },
   {
     "name": "angel of death",
@@ -3573,19 +3631,25 @@
     "name": "rat swarm",
     "points": 596,
     "image": "character-ability-cards/MT/gnawing-horde.png",
-    "xws": "gnawinghorde"
+    "xws": "gnawinghorde",
+    "level" : 1,
+    "initiative" : 82
   },
   {
     "name": "rat king",
     "points": 597,
     "image": "character-ability-cards/MT/many-as-one.png",
-    "xws": "manyasone"
+    "xws": "manyasone",
+    "level" : 9,
+    "initiative" : 91
   },
   {
     "name": "monstrous rat",
     "points": 598,
     "image": "character-ability-cards/MT/wretched-creature.png",
-    "xws": "wretchedcreature"
+    "xws": "wretchedcreature",
+    "level" : 2,
+    "initiative" : 84
   },
   {
     "name": "healing sprite",
