@@ -5,10 +5,20 @@ var bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static("public"));
+
+app.set('view engine', 'ejs')
 
 var port = process.env.PORT || 8080;
 
 var fs = require('fs');
+
+// var image = require('./Assets/images/character-ability-cards/MT/brain-leech.png');
+
+app.get('/', function(req, res) {
+    var cardText = "/images/character-ability-cards/MT/brain-leech.png"
+    res.render('index', {cardOne: cardText});
+})
 
 app.get('/ability-cards', function(req, res) {
     fs.readFile(
@@ -22,6 +32,25 @@ app.get('/ability-cards', function(req, res) {
 
 app.get('/api', (req, res) => {
     res.send('API page')
+});
+
+
+
+
+app.post('/', function (req, res) {
+    var text = "TEXT";
+    res.render('index', {cardOne: text});
+    console.log(req.body.cardOne);
+    console.log("HELLO!");
+    // console.log(req.body.city);
+});
+
+app.post('/play',function(req,res){
+
+    // console.log("Body" +req.body.body);
+    res.write("Card One " +req.body.cardUrlOne);
+    res.write("Card Two " +req.body.cardUrlTwo);
+    res.end();
 });
 
 app.use(express.static('Assets/images/'));
