@@ -17,7 +17,11 @@ var fs = require('fs');
 
 app.get('/', function(req, res) {
     var cardText = "/images/character-ability-cards/MT/brain-leech.png"
-    res.render('index', {cardOne: cardText});
+    var cardTwoText = "/images/character-ability-cards/MT/frigid-apparition.png"
+    res.render('index', {
+        cardOne: cardText,
+        cardTwo: cardTwoText
+    });
 })
 
 app.get('/ability-cards', function(req, res) {
@@ -37,20 +41,29 @@ app.get('/api', (req, res) => {
 
 
 
-app.post('/', function (req, res) {
-    var text = "TEXT";
-    res.render('index', {cardOne: text});
-    console.log(req.body.cardOne);
-    console.log("HELLO!");
-    // console.log(req.body.city);
-});
+// app.post('/', function (req, res) {
+//     var text = "TEXT";
+//     res.render('index', {cardOne: text});
+//     console.log(req.body.cardOne);
+//     console.log("HELLO!");
+//     // console.log(req.body.city);
+// });
 
-app.post('/play',function(req,res){
-
+app.post('/',function(req,res){
+    // "/images/character-ability-cards/MT/brain-leech.png"
     // console.log("Body" +req.body.body);
-    res.write("Card One " +req.body.cardUrlOne);
-    res.write("Card Two " +req.body.cardUrlTwo);
-    res.end();
+    // res.write("Card One " +req.body.cardUrlOne);
+    // res.write("Card Two " +req.body.cardUrlTwo);
+
+    var textResponse = {
+        cardOne: req.body.cardUrlOne,
+        cardTwo: req.body.cardUrltwo
+    }
+
+    res.render('index', textResponse);
+
+
+    // res.end();
 });
 
 app.use(express.static('Assets/images/'));
