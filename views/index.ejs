@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Express - Node.js POST data example</title>
+</head>
+
+<body>
+  <form action="/" method="POST">
+    Some data: <input type="text" name="cardOne" id="cardOne">
+    <button type="submit">Send</button>
+  </form>
+  <img src="images/character-ability-cards/MT/brain-leech.png"/>
+
+
+
+  <% if(cardOne !== null){ %>
+    <img src = <%= cardOne %> />
+    <p><%= cardOne %></p>
+  <% } %>
+</body>
+</html>
