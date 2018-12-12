@@ -16,6 +16,9 @@ app.set('view engine', 'ejs')
 var first = "";
 var second = "";
 
+
+var reloadServer = reload(app);
+
 app.get('/', function(req, res) {
     console.log("GET");
     res.render('index', {
@@ -39,7 +42,6 @@ app.post('/selected-cards',function(req,res){
 });
 
 
-reloadServer = reload(app);
 
 app.get('/ability-cards', function(req, res) {
     fs.readFile(
