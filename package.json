@@ -7,14 +7,13 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "heroku": "^7.19.3"
-  },
-  "devDependencies": {
+    "heroku": "^7.19.3",
     "reload": "^2.4.0"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "npm install && node app.js"
   },
   "author": "Nate Hancock",
   "license": "ISC"
