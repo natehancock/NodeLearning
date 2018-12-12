@@ -2,6 +2,10 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var port = process.env.PORT || 8080;
+var fs = require('fs');
+var reload = require('reload')
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -9,20 +13,33 @@ app.use(express.static("public"));
 
 app.set('view engine', 'ejs')
 
-var port = process.env.PORT || 8080;
-
-var fs = require('fs');
-
-// var image = require('./Assets/images/character-ability-cards/MT/brain-leech.png');
+var first = "";
+var second = "";
 
 app.get('/', function(req, res) {
-    var cardText = "/images/character-ability-cards/MT/brain-leech.png"
-    var cardTwoText = "/images/character-ability-cards/MT/frigid-apparition.png"
+    console.log("GET");
     res.render('index', {
-        cardOne: cardText,
-        cardTwo: cardTwoText
+        cardOne: first,
+        cardTwo: second
     });
 })
+
+
+
+app.get('/api', (req, res) => {
+    res.send('API page')
+});
+
+app.post('/selected-cards',function(req,res){
+    console.log("POST");
+    first = req.body.cardUrlOne;
+    second = req.body.cardUrlTwo;
+    res.end();
+    reloadServer.reload();
+});
+
+
+reloadServer = reload(app);
 
 app.get('/ability-cards', function(req, res) {
     fs.readFile(
@@ -33,39 +50,5 @@ app.get('/ability-cards', function(req, res) {
         }
     )
 });
-
-app.get('/api', (req, res) => {
-    res.send('API page')
-});
-
-
-
-
-// app.post('/', function (req, res) {
-//     var text = "TEXT";
-//     res.render('index', {cardOne: text});
-//     console.log(req.body.cardOne);
-//     console.log("HELLO!");
-//     // console.log(req.body.city);
-// });
-
-app.post('/',function(req,res){
-    // "/images/character-ability-cards/MT/brain-leech.png"
-    // console.log("Body" +req.body.body);
-    // res.write("Card One " +req.body.cardUrlOne);
-    // res.write("Card Two " +req.body.cardUrlTwo);
-
-    var textResponse = {
-        cardOne: req.body.cardUrlOne,
-        cardTwo: req.body.cardUrltwo
-    }
-
-    res.render('index', textResponse);
-
-
-    // res.end();
-});
-
-app.use(express.static('Assets/images/'));
 
 app.listen(port, () => console.log(`Listening on ${port}`));
