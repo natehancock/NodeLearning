@@ -41,11 +41,9 @@ app.post('/selected-cards',function(req,res){
     reloadServer.reload();
 });
 
-
-
 app.get('/ability-cards', function(req, res) {
     fs.readFile(
-        './Assets/data/character-ability-cards.js', function(error, data) {
+        'public/data/character-ability-cards.js', function(error, data) {
             res.writeHead( 200, {'Content-Type': 'application/json'});
             res.write(data);
             res.end();
