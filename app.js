@@ -4,7 +4,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var port = process.env.PORT || 8080;
 var fs = require('fs');
-var reload = require('reload')
+var reload = require('reload');
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
